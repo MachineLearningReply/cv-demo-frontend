@@ -1,19 +1,25 @@
 import React from "react";
 import { Link as ScrollLink } from "react-scroll";
-
 function Hero() {
   return (
     <>
       <div
         className="relative heroElem w-full pt-20 pb-40 m-auto flex justify-center text-center flex-col items-center z-1"
-        style={{ maxWidth: "1200px" }}
+        style={{ 
+          maxWidth: "1200px", 
+          backgroundImage: `url(/static/projects/iStock-922813522.jpg)`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundPositionY: "110px",
+          backgroundRepeat: 'no-repeat',
+        }}
       >
-        <p className="text-xl mb-5">Hey, I'm Brayden.</p>
+        <p className="text-xl mb-5">Hey there, we are </p>
         <h1 className="heroTitle inline-block max-w-2xl lg:max-w-4xl  w-auto relative text-5xl md:text-6xl lg:text-7xl tracking-tighter mb-10 font-bold heroShinyBg">
-          I enjoy <span className="heroShiny1 text-fun-pink">building</span> and{" "}
-          <span className="heroShiny2 text-fun-pink">designing</span> for the
-          web.
-          <img
+          Computer Vision <span className="heroShiny1 text-fun-pink">artisians</span> at{" "}
+          <span className="heroShiny2 text-fun-pink">MLReply</span> 
+          
+          {/* <img
             className="sqD squiggle-hero-html w-16 top-[-90px] right-[5%] sm:top-[-90px] sm:right-[170px]"
             style={{ animationDelay: "0.1s" }}
             src="/static/doodles/hero/html.svg"
@@ -56,7 +62,7 @@ function Hero() {
             className="sqD left-[-35px] bottom-[-85px] sm:bottom-[-100px] sm:left-5 opacity-40"
             style={{ animationDelay: "0.9s" }}
             src="/static/doodles/hero/code.svg"
-          />
+          /> */}
         </h1>
         <ScrollLink
           activeClass="active"
@@ -66,9 +72,9 @@ function Hero() {
           smooth={true}
           duration={500}
         >
-          <div className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 text-fun-white border-2 text-xl rounded-full border-fun-white bg-bg hover:bg-fun-pink hover:text-white hover:border-fun-pink transition-colors">
+          {/* <div className="cursor-pointer font-bold whitespace-nowrap px-10 py-4 text-fun-white border-2 text-xl rounded-full border-fun-white bg-bg hover:bg-fun-pink hover:text-white hover:border-fun-pink transition-colors">
             Tell me more
-          </div>
+          </div> */}
         </ScrollLink>
       </div>
     </>
