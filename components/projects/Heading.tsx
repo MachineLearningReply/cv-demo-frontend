@@ -30,9 +30,7 @@ function Heading({ tag }: HeadingProps) {
       )}
       {!tag && (
         <p className="text-fun-gray text-xl sm:text-2xl max-w-3xl m-auto">
-          I've built cool apps and websites using anything from HTML to React
-          (and even PHP!). Here are some of my favorite projects over the course
-          of my journey.
+          At machine learning reply we are using computer vision and deep learning to build state of the art products. We help our clients to build products that add value to their business. We are a passionate about novel ways to tackle real world problems we are always looking for new challenges. Checkout our projects below.
         </p>
       )}
     </div>

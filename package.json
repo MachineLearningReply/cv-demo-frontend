@@ -4,12 +4,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "serve": "next serve"
+    "serve": "next serve",
+    "predeploy": "next build && next export && touch out/.nojekyll",
+    "deploy": "gh-pages -d out"
   },
   "dependencies": {
     "@mapbox/rehype-prism": "^0.8.0",
     "@tailwindcss/forms": "^0.5.2",
     "contentlayer": "^0.1.0",
+    "gh-pages": "^5.0.0",
     "gray-matter": "^4.0.3",
     "next": "12.0.7",
     "next-contentlayer": "^0.1.0",
